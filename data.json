@@ -1,0 +1,53 @@
+ {
+    "projects": [
+{
+"id": 0, 
+"project_name": "Profile Page",
+ "description": "",
+ "technologies": "",
+ "live_link": "",
+ "github_link": "",
+ "image_urls": ""
+},
+
+{
+"id": 1, 
+"project_name": "Random Quote Generator",
+"description": "",
+"technologies": "",
+"live_link": "",
+"github_link": "",
+"image_urls": ""
+},
+
+ {
+"id": 2, 
+"project_name": "Word Guessing Game",
+"description": "",
+"technologies": "",
+"live_link": "",
+"github_link": "",
+"image_urls": ""
+ },
+
+ {
+ "id": 3, 
+ "project_name": "Awesome Startup API",
+ "description": "",
+ "technologies": "",
+ "live_link": "https://devonfp.github.io/awesome_startup_API/",
+ "github_link": "",
+ "image_urls": ""
+ },
+
+ {
+ "id": 4, 
+ "project_name": "Interactive Form",
+ "description": "",
+ "technologies": "",
+ "live_link": "",
+ "github_link": "",
+ "image_urls": ""
+ }]
+}
+
