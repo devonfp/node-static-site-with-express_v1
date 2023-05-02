@@ -7,9 +7,14 @@ const path = require('path');
 
 
 // view engine setup
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
-app.use('/static', express.static(path.join(__dirname, 'public')));
 // Explain how to code above works
+
+
+// Set up middleware
+app.use('/static', express.static(path.join(__dirname, 'public')));
+
 
 /* GET home and about page. */
 router.get('/', function(req, res, next) {
@@ -25,7 +30,7 @@ router.get('/', function(req, res, next) {
 
   router.get('/projects/:id', function(req, res, next) {
     const projectId = req.params.id;
-    const project = projects.find( ({ id }) => id === +projectId );
+    const project = data.projects.find( ({ id }) => id === +projectId );
     
     if (project) {
       res.render('project', { project });
@@ -48,9 +53,12 @@ app.use((req, res, next) => {
 // Set up error handling middleware
 app.use((error, req, res, next) => {
   res.status(error.status || 500);
-  res.json({ error: error.message });
+  if (error.status === 404) {
+    res.send('Sorry, the page you requested could not be found.');
+  } else {
+    res.json({ error: error.message });
+  }
 });
-
 
 // Start server
 app.listen(3000, () => {

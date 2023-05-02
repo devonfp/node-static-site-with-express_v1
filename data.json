@@ -2,52 +2,68 @@
     "projects": [
 {
 "id": 0, 
-"project_name": "Profile Page",
- "description": "",
- "technologies": "",
- "live_link": "",
- "github_link": "",
- "image_urls": ""
+"title": "Profile Page",
+ "description": "Customized a web page to create a personal profile. Modified the code for a basic web page by adding graphics, custom text, and a stylish design.",
+ "technologies": "HTML, CSS",
+ "live_link": "https://devonfp.github.io/My-Profile/",
+ "github_link": "https://github.com/devonfp/My-Profile",
+ "image_urls": [
+    "images/profile_landing_page.png",
+    "images/profile_additional_1.png"
+  ]
 },
 
 {
 "id": 1, 
-"project_name": "Random Quote Generator",
-"description": "",
-"technologies": "",
-"live_link": "",
-"github_link": "",
-"image_urls": ""
+"title": "Random Quote Generator",
+"description": "Created an app that displays famous random quotes each time the user clicks a button.",
+"technologies": "HTML, CSS, Javascript",
+"live_link": "https://devonfp.github.io/random_quote_generator_v1/",
+"github_link": "https://github.com/devonfp/random_quote_generator_v1",
+"image_urls": [
+    "images/quote_landing_page.png",
+    "images/quote_additional_1.png",
+    "images/quote_additional_2.png"
+  ]
 },
 
  {
 "id": 2, 
-"project_name": "Word Guessing Game",
-"description": "",
-"technologies": "",
-"live_link": "",
-"github_link": "",
-"image_urls": ""
+"title": "Word Guessing Game",
+"description": "Created an array of phrases and wrote functions to choose a random phrase from that array, splited the phrase into letters, and put those letters onto the game board.",
+"technologies": "HTML, CSS, Javascript",
+"live_link": "https://devonfp.github.io/word_guessing_game_v1/",
+"github_link": "https://github.com/devonfp/word_guessing_game_v1",
+"image_urls": [
+    "images/wheel_landing_page.png",
+    "images/wheel_additional_1.png"
+  ]
  },
 
  {
  "id": 3, 
- "project_name": "Awesome Startup API",
- "description": "",
- "technologies": "",
+ "title": "Awesome Startup API",
+ "description": "Used a Random User Generator API to grab information for 12 employees and used that data to build a prototype for an Awesome Startup employee directory.",
+ "technologies": "HTML, CSS, Javascript",
  "live_link": "https://devonfp.github.io/awesome_startup_API/",
- "github_link": "",
- "image_urls": ""
+ "github_link": "https://github.com/devonfp/awesome_startup_API",
+ "image_urls": [
+    "images/awesome_startup_landing_page.png",
+    "images/awesome_additional_1.png"
+  ]
  },
 
  {
  "id": 4, 
- "project_name": "Interactive Form",
- "description": "",
- "technologies": "",
- "live_link": "",
- "github_link": "",
- "image_urls": ""
+ "title": "Interactive Form",
+ "description": "Used JavaScript to enhance an interactive registration form for a fictional Full Stack conference.",
+ "technologies": "HTML, CSS, Javascript",
+ "live_link": "https://devonfp.github.io/Interactive-Form/",
+ "github_link": "https://github.com/devonfp/Interactive-Form",
+ "image_urls": [
+    "images/form_landing_page.png",
+    "images/form_additional_1.png"
+  ]
  }]
 }
 
