@@ -1,5 +1,4 @@
 const express = require('express');
-const router = express.Router();
 const data =  require('./data.json');
 
 const app = express();
@@ -17,18 +16,18 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 
 
 /* GET home and about page. */
-router.get('/', function(req, res, next) {
+app.get('/', function(req, res, next) {
     // 1. Pass all project data to 'index' template
     res.render('index',{projects: data.projects});
   });
 
-  router.get('/about', function(req, res, next) {
+  app.get('/about', function(req, res, next) {
     // 1. Pass all project data to 'index' template
     res.render('about', {projects: data.projects});
   });
 
 
-  router.get('/projects/:id', function(req, res, next) {
+  app.get('/projects/:id', function(req, res, next) {
     const projectId = req.params.id;
     const project = data.projects.find( ({ id }) => id === +projectId );
     
@@ -66,4 +65,4 @@ app.listen(3000, () => {
 });
 
 
- module.exports = router;
+ module.exports = app;
