@@ -2,7 +2,7 @@
     "projects": [
 {
 "id": 0, 
-"title": "Profile Page",
+"project_name": "Profile Page",
  "description": " This profile gives additional insight on my experience. Feel free to check it out!",
  "technologies": "HTML, CSS",
  "live_link": "https://devonfp.github.io/My-Profile/",
@@ -16,7 +16,7 @@
 
 {
 "id": 1, 
-"title": "Random Quote Generator",
+"project_name": "Random Quote Generator",
 "description": "This app displays famous random quotes everytime you click the button!",
 "technologies": "HTML, CSS, Javascript",
 "live_link": "https://devonfp.github.io/random_quote_generator_v1/",
@@ -31,7 +31,7 @@
 
  {
 "id": 2, 
-"title": "Word Guessing Game",
+"project_name": "Word Guessing Game",
 "description": "This is the first game I have ever built. Simply guess the phrase and choose wisely. You only have 5 attempts! ",
 "technologies": "HTML, CSS, Javascript",
 "live_link": "https://devonfp.github.io/word_guessing_game_v1/",
@@ -45,7 +45,7 @@
 
  {
  "id": 3, 
- "title": "Awesome Startup API",
+ "project_name": "Awesome Startup API",
  "description": "This is the first API-based app I have built. It showcases a list of 12 employees, including additional information if you click on their card!",
  "technologies": "HTML, CSS, Javascript",
  "live_link": "https://devonfp.github.io/awesome_startup_API/",
@@ -59,7 +59,7 @@
 
  {
  "id": 4, 
- "title": "Interactive Form",
+ "project_name": "Interactive Form",
  "description": "I enhanced an interactive registration form using Javascript. A powerful tool that makes it possible for a site to not only function, but improve your experience on the web.",
  "technologies": "HTML, CSS, Javascript",
  "live_link": "https://devonfp.github.io/Interactive-Form/",

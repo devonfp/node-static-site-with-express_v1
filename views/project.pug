@@ -11,7 +11,7 @@ block content
     .inner-wrapper.flex-row-wrap.two-col
       .project-info-box.box
 
-        h1 #{project.title}
+        h1 #{project.project_name}
 
         p #{project.description}
 
@@ -25,8 +25,8 @@ block content
 
     .project-img-box.box
 
-      img.project-img(src=`${project.image_urls[1]}`, alt=`The first image here shows a preview of the ${project.title}`)
-      img.project-img(src=`${project.image_urls[2]}`, alt=`The second image shown below is an additional preview of the ${project.title}`)
+      img.project-img(src=`${project.image_urls[1]}`, alt=`The first image here shows a preview of the ${project.project_name}`)
+      img.project-img(src=`${project.image_urls[2]}`, alt=`The second image shown below is an additional preview of the ${project.project_name}`)
 
     nav.nav
       a(href='/')
