@@ -8,21 +8,18 @@ const path = require('path');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
-// Explain how to code above works
 
 
-// Set up middleware
+// Sets up middleware
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
 
 /* GET home and about page. */
 app.get('/', function(req, res, next) {
-    // 1. Pass all project data to 'index' template
     res.render('index',{projects: data.projects});
   });
 
   app.get('/about', function(req, res, next) {
-    // 1. Pass all project data to 'index' template
     res.render('about', {projects: data.projects});
   });
 
@@ -42,24 +39,24 @@ app.get('/', function(req, res, next) {
 
   
 
-// Set up middleware to catch undefined routes
+// Sets up middleware to catch undefined routes
 app.use((req, res, next) => {
   const error = new Error('Sorry, the page you requested could not be found.');
   error.status = 404;
   next(error);
 });
 
-// Set up error handling middleware
+// Sets up error handling middleware
 app.use((error, req, res, next) => {
   res.status(error.status || 500);
   if (error.status === 404) {
-    res.send('Sorry, the page you requested could not be found.');
+    res.send('Sorry! It appears the page you requested could not be found.');
   } else {
     res.json({ error: error.message });
   }
 });
 
-// Start server
+// Starts server
 app.listen(3000, () => {
   console.log('Server is listening on port 3000');
 });

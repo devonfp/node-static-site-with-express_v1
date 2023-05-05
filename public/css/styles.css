@@ -89,7 +89,11 @@ a {
 .box h1,
 .box h6 {
   margin: 0 auto 8px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+
+
 
 .box h6 {
   font-size: 1rem;
@@ -109,7 +113,9 @@ nav {
   width: 100%;
   padding: 20px;
   border-bottom: 1px solid #eaeaea;
+  background: linear-gradient(to bottom, #c3c6ce 0%, #ffffff 100%);
 }
+
 
 nav a {
   width: 100%;
@@ -126,6 +132,7 @@ nav a span {
   font-weight: bold;
   font-size: 1.25rem;
 }
+
 
 .sidebar {
   position: absolute;
@@ -151,7 +158,7 @@ nav a span {
 .sidebar .thumbnail {
   width: 100%;
   max-width: 250px;
-  border: 4px solid #fff;
+  /*border: 4px solid #fff;*/
 }
 
 .dev-intro-box {
@@ -178,6 +185,7 @@ nav a span {
   text-transform: uppercase;
   color: #555;
 }
+
 
 .header {
   vertical-align: middle;
@@ -225,12 +233,13 @@ nav a span {
 .portfolio-intro {
   max-width: 1200px;
   padding: 40px 50px 30px;
-}
+  background: linear-gradient(to bottom, #ebebec 0%, #ffffff 100%);}
 
 .portfolio-intro h1 {
   font-size: 1.5rem;
   color: #0a0a0a;
   margin: 0 auto 8px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio-intro p {
@@ -259,7 +268,13 @@ nav a span {
   width: 100%;
   min-width: 100px;
   border: 4px solid #fff;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  box-shadow: 0 1px 3px 1px rgb(14 13 13);
+  transition: all 0.3s ease-in-out;
+}
+
+.cell img:hover {
+transform: scale(1.05);
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
 }
 
 
@@ -285,8 +300,9 @@ nav a span {
   max-width: 1065px;
   margin-bottom: 15px;
   border: 4px solid #fff;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
+  box-shadow: 0 1px 3px 1px rgb(14 13 13);
 }
+
 
 .btn-link {
   display: block;
@@ -298,6 +314,11 @@ nav a span {
   padding: 0.85em 1em;
   background-color: #333;
   border: 1px solid transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-link:hover {
+  background-color: #040506;
 }
 
 
